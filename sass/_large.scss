@@ -1,0 +1,88 @@
+@media (min-width: 992px) {
+	.nav-desktop {
+		display: flex;
+		flex-direction: row;
+		position: sticky;
+		justify-content: flex-start;
+		align-items: center;
+		top: 0em;
+		margin: 0 auto;
+		height: 10vh;
+		width: 100%;
+
+		.nav__logo {
+			position: relative;
+			top: 0em;
+			left: 1em;
+			color: $main-green;
+			font-size: 2.6rem;
+			a {
+				color: whitesmoke;
+				text-decoration: none;
+				span {
+					color: $main-green;
+				}
+			}
+		}
+
+		.nav__items {
+			position: relative;
+			// display: flex;
+			// flex-direction: row;
+			left: 4em;
+			a {
+				position: relative;
+				top: 0.2em;
+				left: 0%;
+				padding: 0.5em;
+				margin: 0.3em;
+				font-size: 1.6rem;
+				color: whitesmoke;
+				text-decoration: none;
+				transition: color 0.3s;
+			}
+			a:hover {
+				color: $main-green;
+			}
+		}
+
+		.nav-btn__box {
+			position: absolute;
+			top: 1em;
+			right: 2em;
+			margin-bottom: 2em;
+			button {
+				font-size: 1.2rem;
+				padding: 0.7em 1.5em;
+				color: whitesmoke;
+				background-color: $secondary-green;
+				transition: 0.3s;
+
+				&::before {
+					position: absolute;
+					content: '';
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					border: 1px solid rgb(255, 255, 255);
+					opacity: 0;
+				}
+
+				&:hover::before {
+					animation: pulse 1s;
+				}
+			}
+		}
+	}
+	.nav-mobile {
+		display: none;
+	}
+	.features {
+		height: 100vh;
+	}
+
+
+}

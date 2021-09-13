@@ -1,0 +1,36 @@
+@media (min-width: 576px) {
+	.nav-desktop {
+		display: none;
+	}
+	.nav-mobile {
+		display: flex;
+		height: 10vh;
+
+		.nav__logo {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			color: $main-green;
+			font-size: 3rem;
+			a {
+				color: whitesmoke;
+				text-decoration: none;
+				span {
+					color: $main-green;
+				}
+			}
+		}
+	}
+
+	.header {
+		position: relative;
+		&__text {
+			position: absolute;
+			top: 50%;
+		}
+
+        &__arrow {
+            bottom: 15%;
+        }
+	}
+}
